@@ -9,7 +9,7 @@ possitionType* transform(possitionType *pos) {
   const float PITCH_CENTER = 0.5;
 
   if (MIRROR_YAW) {
-    pos->yaw *= -1;
+    pos->yaw = 1- pos->yaw;
   }
 
   // scale, offset, limit, transform possition depending what is the difference in
